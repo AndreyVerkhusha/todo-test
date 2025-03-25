@@ -1,0 +1,15 @@
+@import './clean-styles.scss';
+@import './variables.scss';
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  color: var(--textColor);
+  font-weight: 500;
+  font-size: 14px;
+  font-family: Gilroy, sans-serif;
+  background: #b5b5b5;
+}
