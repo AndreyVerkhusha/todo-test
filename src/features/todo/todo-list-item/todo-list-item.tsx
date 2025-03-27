@@ -1,5 +1,5 @@
 import { FormControlLabel } from '@mui/material';
-import React, { FC } from 'react';
+import React, { FC, memo } from 'react';
 
 import { CheckboxChangeEvent, Todo } from '@/shared/types/Todo';
 import { Checkbox } from '@/shared/ui/checkbox';
@@ -10,7 +10,7 @@ type TodoListItemProps = {
   onChange: (e: CheckboxChangeEvent) => void;
 } & Todo;
 
-export const TodoListItem: FC<TodoListItemProps> = ({ label, checked, onChange }) => {
+export const TodoListItem: FC<TodoListItemProps> = memo(({ label, checked, onChange }) => {
   return (
     <TodoItemContainer>
       <FormControlLabel
@@ -19,4 +19,4 @@ export const TodoListItem: FC<TodoListItemProps> = ({ label, checked, onChange }
       />
     </TodoItemContainer>
   );
-};
+});
