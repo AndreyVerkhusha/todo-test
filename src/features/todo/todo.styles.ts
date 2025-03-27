@@ -6,5 +6,5 @@ export const TodoWrapper = styled(Paper)`
   max-width: var(--defaultWithTodo);
   width: 100%;
   background: var(--backgroundWrapperColor);
-  border-radius: 8px;
+  border-radius: 8px !important;
 `;
