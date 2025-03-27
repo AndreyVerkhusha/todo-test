@@ -6,7 +6,7 @@ import { TodoListContent } from './todo-list-content/todo-list-content';
 
 export const Todo = () => {
   return (
-    <TodoWrapper>
+    <TodoWrapper elevation={5}>
       <TodoListContent />
       <TodoFilters />
     </TodoWrapper>
